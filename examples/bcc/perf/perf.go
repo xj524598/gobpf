@@ -81,7 +81,8 @@ type chownEvent struct {
 }
 
 func main() {
-	fmt.Fprint(os.Stdin,"xujie make")
+	fmt.Fprint(os.Stdin, "xujie make")
+
 	m := bpf.NewModule(source, []string{})
 	defer m.Close()
 
